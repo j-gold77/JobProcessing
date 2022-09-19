@@ -1,0 +1,31 @@
+100 jobs:
+
+Current Systemtime(cycles): 3573
+Total number of jobs executed: 100
+Average process waiting time: 1767 cycles
+Total number of priority changes: 3
+Actual systemtime needed to execute all jobs: 77ms
+
+1000 jobs;
+
+Current Systemtime(cycles): 37079
+Total number of jobs executed: 1000
+Average process waiting time: 18634 cycles
+Total number of priority changes: 34
+Actual systemtime needed to execute all jobs: 387ms
+
+10000 jobs;
+
+Current Systemtime(cycles): 375206
+Total number of jobs executed: 10000
+Average process waiting time: 188883 cycles
+Total number of priority changes: 347
+Actual systemtime needed to execute all jobs: 15573ms
+
+100000 jobs:
+
+Current Systemtime(cycles): 3761058
+Total number of jobs executed: 100000
+Average process waiting time: 1889436 cycles
+Total number of priority changes: 3485
+Actual systemtime needed to execute all jobs: 1976405ms

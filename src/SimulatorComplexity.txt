@@ -1,0 +1,23 @@
+What is the Big-O (O(n)) and Big-Omega (Ω(n)) time complexity for each of the implemented priority queues in
+terms of MaxNumberOfJobs? explain.
+
+The Big-O and omega for my heap based arraylist queue will be O(nlogn) where n is the number of jobs. The insert
+and removemin operations for heap take logn time and since we have n jobs, it will take n*logn time.
+
+The Big-O and omega for my linked list based sorted queue is O(n^2) where n is the number of jobs. It takes n time 
+for the insert method and contant time for the other methods. since we have n jobs it will n n*n time.
+
+ What is the space complexity of each of the implemented priority queues in terms of MaxNumberOfJobs? explain
+
+For both ADTs my space complexity will be O(n) since my queues have to hold n number of jobs.
+
+Is there is a performance difference between the different implementations? Is the difference significant (i.e. in
+terms of increased % of time)? If so, explain why; if not, explain why in the end all these implementations produce
+comparable results. 
+
+My heap is much faster than my sorted queue. My heap was able to do 100k jobs in a few mins where my sorted did it 
+in about 30 minutes. The reason its so much faster is firstly nglogn < n^2 but also thats the upperbound time,
+most of the time my heap is running at logn time as opposed to n time my sorted which is leaps and bounds quicker.
+When my heap searches for staved jobs and removes a job it must correct the heap, at worst that will be nlogn but
+since that is happening every 30 job terminations, most of the cycles are running at logn making it significantly
+faster tha my sorted.
